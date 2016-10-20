@@ -1,0 +1,11 @@
+'.platform-linux atom-workspace':
+  'alt-shift-r': 'ruby-test-switcher:switch'
+  'alt-r': 'ruby-test-switcher:switch-without-split'
+
+'.platform-darwin atom-workspace':
+  'alt-shift-r': 'ruby-test-switcher:switch'
+  'alt-r': 'ruby-test-switcher:switch-without-split'
+
+'.platform-win32 atom-workspace':
+  'alt-shift-r': 'ruby-test-switcher:switch'
+  'alt-r': 'ruby-test-switcher:switch-without-split'

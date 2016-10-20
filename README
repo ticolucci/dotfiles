@@ -1,0 +1,9 @@
+link all above as .*
+
+ln -s $PWD/zshrc $HOME/.zshrc
+ln -s $PWD/gitignore_global $HOME/.gitignore_global
+ln -s $PWD/gitconfig $HOME/.gitconfig
+ln -s $PWD/atom $HOME/.atom
+ln -s $PWD/vim-config/.vimrc $HOME/.vimrc
+ln -s $PWD/vim-config/.vim $HOME/.vim
+

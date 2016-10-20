@@ -1,0 +1,220 @@
+{
+  "name": "language-elm",
+  "version": "1.5.0",
+  "description": "Syntax highlighting and autocompletion for the language Elm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edubkendo/atom-elm.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "dependencies": {
+    "elm-oracle": "0.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "4.1.6",
+    "pre-commit": "1.1.2",
+    "standard": "5.4.1"
+  },
+  "main": "./lib/main",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "atom"
+    ]
+  },
+  "readme": "# language-elm package\n\nSyntax highlighting and autocomplete for the [Elm language](http://elm-lang.org/).\n\n## Installation\n\nThere are two ways to install the Atom Elm Extension: using the editor, or using the command line.\n\n### Install using the editor (Recommended)\n\nYou can install packages within Atom. To do so:\n\n  1. Open the editor settings\n  2. Click the \"Install\" menu item\n  3. Search for \"language-elm\"\n  4. Click the install button on the \"language-elm\" result\n  \n[More documentation for how to use the package manager](https://atom.io/docs/v1.5.3/using-atom-atom-packages) can be found on the official Atom site.\n\n#### Screenshot\n\n![Screenshot of installation](https://raw.githubusercontent.com/edubkendo/atom-elm/better-instructions/screenshot.png)\n\n### Install using the command line\n\nRun the following command in your terminal:\n\n```apm install language-elm```\n\n## Autocomplete\n\nIn order to get autocomplete working, please:\n\n  1. Open up a terminal\n  2. `npm install -g elm-oracle`\n  3. `which elm-oracle` on Unix/Linux or `where.exe elm-oracle` on Windows\n  4. Copy the path to elm-oracle\n  5. Open up the language-elm settings in Atom  \n    - Open up the Atom Settings / Preferences tab\n    - Click on \"Packages\"\n    - Find the \"language-elm\" package in the list\n    - Click \"Settings\"\n  6. Paste the path into \"The elm-oracle executable path\" setting\n\nThanks to the authors of [Elm Oracle](https://github.com/ElmCast/elm-oracle)\n\n## Jump to Symbol\n\nAtom's native symbol-view package uses ctags, and thus doesn't support Elm without extra configuration. But this plugin https://atom.io/packages/goto uses langauge definition files to identify symbols, and does support Elm as long as atom-elm is installed.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/edubkendo/atom-elm/issues"
+  },
+  "homepage": "https://github.com/edubkendo/atom-elm#readme",
+  "_id": "language-elm@1.5.0",
+  "_shasum": "50819750b010ddcc4b205aac0767d7697e683cb3",
+  "_resolved": "file:../d-116513-46164-i2o210/package.tgz",
+  "_from": "../d-116513-46164-i2o210/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "rest",
+        "version": "1.3.2",
+        "path": "node_modules/elm-oracle/node_modules/rest/node.js"
+      },
+      {
+        "name": "when",
+        "version": "3.7.7",
+        "path": "node_modules/elm-oracle/node_modules/when/when.js"
+      }
+    ],
+    "extensions": {
+      ".js": [
+        "lib/elmOracle.js",
+        "lib/main.js",
+        "lib/provider.js",
+        "node_modules/elm-oracle/Native/Main.js",
+        "node_modules/elm-oracle/node_modules/rest/UrlBuilder.js",
+        "node_modules/elm-oracle/node_modules/rest/browser.js",
+        "node_modules/elm-oracle/node_modules/rest/client/default.js",
+        "node_modules/elm-oracle/node_modules/rest/client/jsonp.js",
+        "node_modules/elm-oracle/node_modules/rest/client/node.js",
+        "node_modules/elm-oracle/node_modules/rest/client/xdr.js",
+        "node_modules/elm-oracle/node_modules/rest/client/xhr.js",
+        "node_modules/elm-oracle/node_modules/rest/client.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/basicAuth.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/csrf.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/defaultRequest.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/entity.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/errorCode.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/hateoas.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/ie/xdomain.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/ie/xhr.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/jsonp.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/location.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/mime.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/oAuth.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/pathPrefix.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/retry.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/template.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor/timeout.js",
+        "node_modules/elm-oracle/node_modules/rest/interceptor.js",
+        "node_modules/elm-oracle/node_modules/rest/mime/registry.js",
+        "node_modules/elm-oracle/node_modules/rest/mime/type/application/hal.js",
+        "node_modules/elm-oracle/node_modules/rest/mime/type/application/json.js",
+        "node_modules/elm-oracle/node_modules/rest/mime/type/application/x-www-form-urlencoded.js",
+        "node_modules/elm-oracle/node_modules/rest/mime/type/multipart/form-data.js",
+        "node_modules/elm-oracle/node_modules/rest/mime/type/text/plain.js",
+        "node_modules/elm-oracle/node_modules/rest/mime.js",
+        "node_modules/elm-oracle/node_modules/rest/node.js",
+        "node_modules/elm-oracle/node_modules/rest/parsers/_template.js",
+        "node_modules/elm-oracle/node_modules/rest/parsers/rfc5988.js",
+        "node_modules/elm-oracle/node_modules/rest/rest.js",
+        "node_modules/elm-oracle/node_modules/rest/util/base64.js",
+        "node_modules/elm-oracle/node_modules/rest/util/find.js",
+        "node_modules/elm-oracle/node_modules/rest/util/lazyPromise.js",
+        "node_modules/elm-oracle/node_modules/rest/util/mixin.js",
+        "node_modules/elm-oracle/node_modules/rest/util/normalizeHeaderName.js",
+        "node_modules/elm-oracle/node_modules/rest/util/pubsub.js",
+        "node_modules/elm-oracle/node_modules/rest/util/responsePromise.js",
+        "node_modules/elm-oracle/node_modules/rest/util/uriEncoder.js",
+        "node_modules/elm-oracle/node_modules/rest/util/uriTemplate.js",
+        "node_modules/elm-oracle/node_modules/rest/wire.js",
+        "node_modules/elm-oracle/node_modules/when/callbacks.js",
+        "node_modules/elm-oracle/node_modules/when/cancelable.js",
+        "node_modules/elm-oracle/node_modules/when/delay.js",
+        "node_modules/elm-oracle/node_modules/when/dist/browser/when.debug.js",
+        "node_modules/elm-oracle/node_modules/when/dist/browser/when.js",
+        "node_modules/elm-oracle/node_modules/when/dist/browser/when.min.js",
+        "node_modules/elm-oracle/node_modules/when/es6-shim/Promise.browserify-es6.js",
+        "node_modules/elm-oracle/node_modules/when/es6-shim/Promise.js",
+        "node_modules/elm-oracle/node_modules/when/es6-shim/Promise.min.js",
+        "node_modules/elm-oracle/node_modules/when/function.js",
+        "node_modules/elm-oracle/node_modules/when/generator.js",
+        "node_modules/elm-oracle/node_modules/when/guard.js",
+        "node_modules/elm-oracle/node_modules/when/keys.js",
+        "node_modules/elm-oracle/node_modules/when/lib/Promise.js",
+        "node_modules/elm-oracle/node_modules/when/lib/Scheduler.js",
+        "node_modules/elm-oracle/node_modules/when/lib/TimeoutError.js",
+        "node_modules/elm-oracle/node_modules/when/lib/apply.js",
+        "node_modules/elm-oracle/node_modules/when/lib/decorators/array.js",
+        "node_modules/elm-oracle/node_modules/when/lib/decorators/flow.js",
+        "node_modules/elm-oracle/node_modules/when/lib/decorators/fold.js",
+        "node_modules/elm-oracle/node_modules/when/lib/decorators/inspect.js",
+        "node_modules/elm-oracle/node_modules/when/lib/decorators/iterate.js",
+        "node_modules/elm-oracle/node_modules/when/lib/decorators/progress.js",
+        "node_modules/elm-oracle/node_modules/when/lib/decorators/timed.js",
+        "node_modules/elm-oracle/node_modules/when/lib/decorators/unhandledRejection.js",
+        "node_modules/elm-oracle/node_modules/when/lib/decorators/with.js",
+        "node_modules/elm-oracle/node_modules/when/lib/env.js",
+        "node_modules/elm-oracle/node_modules/when/lib/format.js",
+        "node_modules/elm-oracle/node_modules/when/lib/liftAll.js",
+        "node_modules/elm-oracle/node_modules/when/lib/makePromise.js",
+        "node_modules/elm-oracle/node_modules/when/lib/state.js",
+        "node_modules/elm-oracle/node_modules/when/monitor/ConsoleReporter.js",
+        "node_modules/elm-oracle/node_modules/when/monitor/PromiseMonitor.js",
+        "node_modules/elm-oracle/node_modules/when/monitor/console.js",
+        "node_modules/elm-oracle/node_modules/when/monitor/error.js",
+        "node_modules/elm-oracle/node_modules/when/monitor.js",
+        "node_modules/elm-oracle/node_modules/when/node/function.js",
+        "node_modules/elm-oracle/node_modules/when/node.js",
+        "node_modules/elm-oracle/node_modules/when/parallel.js",
+        "node_modules/elm-oracle/node_modules/when/pipeline.js",
+        "node_modules/elm-oracle/node_modules/when/poll.js",
+        "node_modules/elm-oracle/node_modules/when/sequence.js",
+        "node_modules/elm-oracle/node_modules/when/timeout.js",
+        "node_modules/elm-oracle/node_modules/when/unfold/list.js",
+        "node_modules/elm-oracle/node_modules/when/unfold.js",
+        "node_modules/elm-oracle/node_modules/when/when.js"
+      ],
+      ".json": [
+        "node_modules/elm-oracle/elm-package.json",
+        "node_modules/elm-oracle/node_modules/rest/bower.json",
+        "node_modules/elm-oracle/node_modules/rest/package.json",
+        "node_modules/elm-oracle/node_modules/when/package.json",
+        "node_modules/elm-oracle/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "elm-oracle": "0.2.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/elm-oracle/Native",
+          "node_modules/elm-oracle"
+        ],
+        "dependencies": {
+          "rest": "^1.3.1",
+          "when": "^3.7.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/elm-oracle/node_modules/rest",
+          "node_modules/elm-oracle/node_modules/rest/client",
+          "node_modules/elm-oracle/node_modules/rest/interceptor",
+          "node_modules/elm-oracle/node_modules/rest/interceptor/ie",
+          "node_modules/elm-oracle/node_modules/rest/mime",
+          "node_modules/elm-oracle/node_modules/rest/mime/type/application",
+          "node_modules/elm-oracle/node_modules/rest/mime/type/multipart",
+          "node_modules/elm-oracle/node_modules/rest/mime/type/text",
+          "node_modules/elm-oracle/node_modules/rest/parsers",
+          "node_modules/elm-oracle/node_modules/rest/test",
+          "node_modules/elm-oracle/node_modules/rest/test/browsers",
+          "node_modules/elm-oracle/node_modules/rest/test/client/fixtures",
+          "node_modules/elm-oracle/node_modules/rest/test/client",
+          "node_modules/elm-oracle/node_modules/rest/test/interceptor",
+          "node_modules/elm-oracle/node_modules/rest/test/interceptor/ie",
+          "node_modules/elm-oracle/node_modules/rest/test/mime",
+          "node_modules/elm-oracle/node_modules/rest/test/mime/type/application",
+          "node_modules/elm-oracle/node_modules/rest/test/mime/type/multipart",
+          "node_modules/elm-oracle/node_modules/rest/test/mime/type/text",
+          "node_modules/elm-oracle/node_modules/rest/test/util",
+          "node_modules/elm-oracle/node_modules/rest/util"
+        ],
+        "dependencies": {
+          "when": "~3"
+        }
+      }
+    ]
+  }
+}

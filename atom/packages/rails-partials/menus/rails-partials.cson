@@ -1,0 +1,10 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Rails Partials'
+      'submenu': [
+        { 'label': 'Generate Partial', 'command': 'rails-partials:generate' }
+      ]
+    }
+  ]

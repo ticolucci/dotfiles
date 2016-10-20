@@ -1,0 +1,9 @@
+[core]
+	excludesfile = /Users/t.rodrigues-colucci/.gitignore_global
+[push]
+    default = current
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+	pr = pull --rebase

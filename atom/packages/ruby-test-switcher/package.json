@@ -1,0 +1,209 @@
+{
+  "name": "ruby-test-switcher",
+  "author": {
+    "name": "Daniel Carral"
+  },
+  "main": "./lib/ruby-test-switcher",
+  "version": "1.2.3",
+  "description": "Switch between Ruby source code and test files with a single keystroke",
+  "keywords": [
+    "ruby",
+    "test",
+    "rspec",
+    "spec",
+    "tdd",
+    "rails"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcarral/atom-ruby-test-switcher.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "glob": "^5.0.15",
+    "underscore": ">=1.8.3"
+  },
+  "readme": "# [ruby-test-switcher](https://atom.io/packages/ruby-test-switcher) [![Build Status](https://travis-ci.org/dcarral/atom-ruby-test-switcher.svg?branch=master)](https://travis-ci.org/dcarral/atom-ruby-test-switcher)\n\n__ruby-test-switcher__ is an Atom package to switch between Ruby source code and test files with a single keystroke.\n\nIt supports _RSpec_, _minitest_ and _test-unit_, both in _Rails_ and non-_Rails_ projects.\n\n## Usage\n\nBy default, available key bindings are:\n\n- Switch in active pane: <kbd>alt</kbd>-<kbd>r</kbd>\n\n  Switch to target file, in the same pane. *\n\n- Switch splitting panes: <kbd>alt</kbd>-<kbd>shift</kbd>-<kbd>r</kbd>\n\n  Switch to target file, in different pane (if needed). Source files are opened to the left, test files to the right. *\n\n\\* Notice that if the target file is already opened, both commands simply switch to it.\n\n## Installation\n\nFrom the command line:\n\n```\n$ apm install ruby-test-switcher\n```\n\nFrom Atom's GUI:\n\n    Settings/Preferences ➔ Install ➔ `ruby-test-switcher`\n\n---\nInspired by the awesome [Sublime Text 2 Ruby Tests](https://github.com/maltize/sublime-text-2-ruby-tests).\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/dcarral/atom-ruby-test-switcher/issues"
+  },
+  "homepage": "https://github.com/dcarral/atom-ruby-test-switcher#readme",
+  "_id": "ruby-test-switcher@1.2.3",
+  "_shasum": "e37cf80298297947db26cd5509b4195806988941",
+  "_resolved": "file:../d-116726-9171-147boq5/package.tgz",
+  "_from": "../d-116726-9171-147boq5/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "glob",
+        "version": "5.0.15",
+        "path": "node_modules/glob/glob.js"
+      },
+      {
+        "name": "inflight",
+        "version": "1.0.5",
+        "path": "node_modules/glob/node_modules/inflight/inflight.js"
+      },
+      {
+        "name": "wrappy",
+        "version": "1.0.2",
+        "path": "node_modules/glob/node_modules/inflight/node_modules/wrappy/wrappy.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.1",
+        "path": "node_modules/glob/node_modules/inherits/inherits.js"
+      },
+      {
+        "name": "minimatch",
+        "version": "3.0.3",
+        "path": "node_modules/glob/node_modules/minimatch/minimatch.js"
+      },
+      {
+        "name": "brace-expansion",
+        "version": "1.1.6",
+        "path": "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/index.js"
+      },
+      {
+        "name": "balanced-match",
+        "version": "0.4.2",
+        "path": "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js"
+      },
+      {
+        "name": "concat-map",
+        "version": "0.0.1",
+        "path": "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/index.js"
+      },
+      {
+        "name": "once",
+        "version": "1.3.3",
+        "path": "node_modules/glob/node_modules/once/once.js"
+      },
+      {
+        "name": "wrappy",
+        "version": "1.0.2",
+        "path": "node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js"
+      },
+      {
+        "name": "path-is-absolute",
+        "version": "1.0.0",
+        "path": "node_modules/glob/node_modules/path-is-absolute/index.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.8.3",
+        "path": "node_modules/underscore/underscore.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        "coffeelint.json",
+        "node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json",
+        "node_modules/glob/node_modules/inflight/package.json",
+        "node_modules/glob/node_modules/inherits/package.json",
+        "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json",
+        "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json",
+        "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json",
+        "node_modules/glob/node_modules/minimatch/package.json",
+        "node_modules/glob/node_modules/once/node_modules/wrappy/package.json",
+        "node_modules/glob/node_modules/once/package.json",
+        "node_modules/glob/node_modules/path-is-absolute/package.json",
+        "node_modules/glob/package.json",
+        "node_modules/underscore/package.json",
+        "package.json"
+      ],
+      ".coffee": [
+        "lib/buffer-switcher.coffee",
+        "lib/global-path-finder.coffee",
+        "lib/path-finder-utilities.coffee",
+        "lib/path-finder.coffee",
+        "lib/quick-path-finder.coffee",
+        "lib/ruby-test-switcher.coffee"
+      ],
+      ".js": [
+        "node_modules/glob/common.js",
+        "node_modules/glob/glob.js",
+        "node_modules/glob/node_modules/inflight/inflight.js",
+        "node_modules/glob/node_modules/inflight/node_modules/wrappy/wrappy.js",
+        "node_modules/glob/node_modules/inherits/inherits.js",
+        "node_modules/glob/node_modules/inherits/inherits_browser.js",
+        "node_modules/glob/node_modules/inherits/test.js",
+        "node_modules/glob/node_modules/minimatch/minimatch.js",
+        "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/index.js",
+        "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js",
+        "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/example/map.js",
+        "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/index.js",
+        "node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js",
+        "node_modules/glob/node_modules/once/once.js",
+        "node_modules/glob/node_modules/path-is-absolute/index.js",
+        "node_modules/glob/sync.js",
+        "node_modules/underscore/underscore-min.js",
+        "node_modules/underscore/underscore.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib",
+          "spec"
+        ],
+        "dependencies": {
+          "glob": "^5.0.15",
+          "underscore": ">=1.8.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/glob"
+        ],
+        "dependencies": {
+          "inflight": "^1.0.4",
+          "inherits": "2",
+          "minimatch": "2 || 3",
+          "once": "^1.3.0",
+          "path-is-absolute": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/glob/node_modules/inflight"
+        ],
+        "dependencies": {
+          "once": "^1.3.0",
+          "wrappy": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/glob/node_modules/minimatch"
+        ],
+        "dependencies": {
+          "brace-expansion": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/glob/node_modules/minimatch/node_modules/brace-expansion"
+        ],
+        "dependencies": {
+          "balanced-match": "^0.4.1",
+          "concat-map": "0.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/glob/node_modules/once"
+        ],
+        "dependencies": {
+          "wrappy": "1"
+        }
+      }
+    ]
+  }
+}
