@@ -71,8 +71,6 @@ export EDITOR='vim'
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export HOMEBREW_GITHUB_API_TOKEN=d616b18392b2bbd6e20ab3ec2c99f9ab807fcc1d
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
